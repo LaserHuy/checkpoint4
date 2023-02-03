@@ -6,16 +6,20 @@ import { downloadImage } from "../utils";
 const Card = ({ _id, name, photo, prompt }) => {
   console.log(name[0]);
   return (
-    <div className="rounded-xl group relative show-card 
-    hover:shadow-cardhover card">
+    <div className="rounded-xl group relative backdrop-blur-lg
+    [ bg-gradient-to-b from-white/60 to-white/30 ]
+    [ border-opacity-30 ]
+    [ shadow-black/70 shadow-2xl ] overflow-hidden card">
       <img 
-        className="w-full h-auto object-cover rounded-xl"
+        className="w-full h-50 object-cover rounded-xl hover:scale-125 
+        transition-all duration-500"
         src={photo}
         alt={prompt}
       />
       <div className="group-hover:flex flex-col max-h-[94.5%] 
-      hidden absolute bottom-0 left-0 right-0 bg-[#10131f] 
-      m-2 p-4 rounded-md">
+      hidden absolute bottom-0 left-0 right-0 m-2 p-4 rounded-md 
+      bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 
+      border border-gray-200">
         <p className="text-white text-md overflow-y-auto prompt">
           {prompt}
         </p>

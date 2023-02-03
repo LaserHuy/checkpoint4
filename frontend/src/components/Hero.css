@@ -1,0 +1,125 @@
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.infobox {
+    animation-name: leftslide;
+    animation-duration: 0.8s;
+    max-height: 500px;
+    max-width: 55%;
+    overflow: hidden;
+}
+
+.infobox-boldtext {
+    margin: 0;
+    font-family: Poppins;
+    color: #FFFFFF;
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: -2px;
+    text-align: left;
+}
+
+.infobox-slimtext{
+    margin: 24px 0;
+      font-family: Poppins;
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0.5px;
+      text-align: left;
+}
+
+.infobox-btnwrapper {
+    display: flex;
+}
+
+.infobox-createbtn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(103.91deg, #9B51E0 21.01%, rgba(48, 129, 237, 0.8) 100%);
+    padding: 8px 38px;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+}
+
+.display {
+    animation-name: rightslide;
+    animation-duration: 0.8s;
+    padding: 14px;
+    border: 1px solid white;
+    background: linear-gradient(169.44deg, rgba(58, 129, 191, 0.08) 1.85%, rgba(65, 48, 90, 0.08) 98.72%);
+    border-radius: 15px;
+    max-height: 450px;
+    max-width: 50%;
+    overflow: hidden;
+}
+
+.display-nft {
+    object-fit: cover;
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.infowrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.info-hero {
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.info-hero p{
+    margin: 0;
+}
+
+.info-img {
+    object-fit: cover;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.info2 {
+    display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      color: #FFFFFF;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+}
+
+@keyframes leftslide {
+    from {transform: translateX(-700px);}
+    to {transform: translateX(0px);}
+  }
+  
+@keyframes rightslide {
+    from {transform: translateX(550px);}
+    to {transform: translateX(0px);}
+  }
